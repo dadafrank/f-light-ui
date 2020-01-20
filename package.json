@@ -1,6 +1,6 @@
 {
   "name": "ff-light-ui",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
