@@ -1,11 +1,60 @@
 import React from 'react';
 import './App.css';
-import { Button } from './components'
+import { Button, Message } from './components'
 
 function App() {
   return (
     <div>
-    	<Button onClick={() => {alert('被点击')}}>按钮</Button>
+    	<div className='div_container'>
+    		<p>
+    			按钮组件
+    		</p>
+    		<Button>
+    			按钮
+    		</Button>
+    		<div className="space_div"></div>
+    		<Button type="warning">
+    			按钮
+    		</Button>
+    	</div>
+    	<div className='div_container'>
+    		<p>
+    			Message组件
+    		</p>
+    		<Button
+    			onClick={() => {
+    				Message.success('这是一条正确的提示')
+    			}}
+    		>
+    			正确提示
+    		</Button>
+    		<div className="space_div"></div>
+    		<Button
+    			onClick={() => {
+    				Message.error('这是一条错误的提示')
+    			}}
+    			type='warning'
+    		>
+    			错误提示
+    		</Button>
+    		<div className="space_div"></div>
+    		<Button
+    			onClick={() => {
+    				Message.warning('这是一条警告的提示')
+    			}}
+    		>
+    			警告提示
+    		</Button>
+    		<div className="space_div"></div>
+    		<Button
+    			onClick={() => {
+    				Message.warning('这是一条警告的提示', 5000)
+    			}}
+    			type='warning'
+    		>
+    			五秒后关闭的提示
+    		</Button>
+    	</div>
     </div>
   );
 }

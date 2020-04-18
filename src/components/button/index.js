@@ -5,10 +5,13 @@ function Button (props) {
     return (
         <button
             onClick={() => {
+                if (!props.onClick) {
+                    return
+                }
                 props.onClick()
             }}
             className={
-                "f-button " + props.className
+                `f-button ${props.type === 'warning' ? 'f-button-warning ' : ''}` + props.className
             }
         >
             {

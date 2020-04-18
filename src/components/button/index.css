@@ -1,5 +1,6 @@
+/*正常情况*/
 .f-button {
-	width: 70px;
+	min-width: 70px;
     height: 30px;
     outline: none;
     border: none;
@@ -9,4 +10,14 @@
     cursor: pointer;
     border: 1px solid #409EFF;
     background-color: rgba(0,0,0,0);
+    padding: 0 10px;
+}
+.f-button:active {
+    opacity: 0.5;
+}
+
+/*红色*/
+.f-button-warning {
+    border-color: #ff7875;
+    color: #ff7875;
 }

@@ -1,0 +1,22 @@
+.f-message {
+	padding: 7px 10px;
+	min-width: 50px;
+	border-radius: 3px;
+	color: white;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	z-index: 1000;
+	text-align: center;
+	font-size: 12px;
+	transition: top 0.5s;
+}
+.f-message-success {
+	background-color: rgba(82, 196, 26, .6);
+}
+.f-message-error {
+	background-color: rgba(255, 120, 117, .6);
+}
+.f-message-warning {
+	background-color: rgba(255, 228, 0, .6);
+}
