@@ -1,0 +1,12 @@
+.f-input {
+    outline: none;
+    border: 1px solid #E7E7E7;
+    border-radius: 6px;
+    height: 30px;
+    width: 200px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+.f-input:focus {
+    border-color: #409EFF;
+}

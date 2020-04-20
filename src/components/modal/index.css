@@ -1,0 +1,25 @@
+.f-modal-body {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.f-modal-body-container {
+    margin-bottom: 300px;
+    min-width: 300px;
+    min-height: 80px;
+    background-color: white;
+    border-radius: 4px;
+}
+.f-modal-body-container-header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #E7E7E7;
+}
+.f-modal-body-container-body {
+    padding: 10px 20px;
+}
