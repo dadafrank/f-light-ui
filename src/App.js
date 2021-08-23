@@ -7,6 +7,7 @@ function App() {
 
 	return (
 		<div>
+			<h3 style={{ textAlign: 'center' }}>这里是测试组件！</h3>
 			<div className='div_container'>
 				<p>
 					按钮组件
