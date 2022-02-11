@@ -1,7 +1,5 @@
-FROM nginx
+FROM node
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
-COPY ./build /usr/share/nginx/html
+RUN ["npm", "start"]
 
-EXPOSE 443
-
+EXPOSE 8000
